@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SHIELD_STM32_F4VE-rescue)(type Legacy)(uri /home/embedder/Projects/Electronics/SHIELD_STM32_F4VE/SHIELD_STM32_F4VE-rescue.lib)(options "")(descr ""))
+  (lib (name Phone_CC1310-rescue)(type Legacy)(uri /home/embedder/Projects/Electronics/Phone_CC1310/Phone_CC1310-rescue.lib)(options "")(descr ""))
+)
