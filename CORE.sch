@@ -14,21 +14,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F1:STM32F105RBTx U?
+L MCU_ST_STM32F1:STM32F105RBTx U1
 U 1 1 600882D5
 P 5650 3450
-F 0 "U?" H 5050 5200 50  0000 C CNN
+F 0 "U1" H 5050 5200 50  0000 C CNN
 F 1 "STM32F105RBTx" H 5650 3450 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5050 1750 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00220364.pdf" H 5650 3450 50  0001 C CNN
+F 4 "MOUNT" H 5650 3450 50  0001 C CNN "Mount"
+F 5 "SMD" H 5650 3450 50  0001 C CNN "MountType"
+F 6 "ST Microelectronics" H 5650 3450 50  0001 C CNN "Manufacturer"
+F 7 "STM32F105RBT6" H 5650 3450 50  0001 C CNN "PartNumber"
+F 8 "32-Bit  ARM® Cortex®-M3 72MHz, FLASH 128kB, RAM 64kB, 2V ~ 3.6V" H 5650 3450 50  0001 C CNN "Description"
 	1    5650 3450
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR016
 U 1 1 5E8CE589
 P 5650 5400
-F 0 "#PWR?" H 5650 5150 50  0001 C CNN
+F 0 "#PWR016" H 5650 5150 50  0001 C CNN
 F 1 "GND" V 5655 5272 50  0000 R CNN
 F 2 "" H 5650 5400 50  0001 C CNN
 F 3 "" H 5650 5400 50  0001 C CNN
@@ -36,10 +41,10 @@ F 3 "" H 5650 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR015
 U 1 1 5E744294
 P 5550 1450
-F 0 "#PWR?" H 5550 1300 50  0001 C CNN
+F 0 "#PWR015" H 5550 1300 50  0001 C CNN
 F 1 "+3.3V" V 5550 1700 50  0000 C CNN
 F 2 "" H 5550 1450 50  0001 C CNN
 F 3 "" H 5550 1450 50  0001 C CNN
@@ -49,24 +54,26 @@ $EndComp
 Wire Wire Line
 	5550 1450 5550 1650
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5E763758
 P 1100 7100
-F 0 "SW?" V 1054 7248 50  0000 L CNN
+F 0 "SW1" V 1054 7248 50  0000 L CNN
 F 1 "RST" V 1145 7248 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_B3U-3000P" H 1100 7300 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_ALPS-Electric-SKRELGE010_C370966.pdf" H 1100 7300 50  0001 C CNN
 F 4 "SPST Side Actuated Plunger for Cap SMD Tactile Switches" H 1100 7100 50  0001 C CNN "Description"
 F 5 "ALPS Electric" H 1100 7100 50  0001 C CNN "Manufacturer"
 F 6 "SKRELGE010" H 1100 7100 50  0001 C CNN "PartNumber"
+F 7 "MOUNT" H 1100 7100 50  0001 C CNN "Mount"
+F 8 "SMD" H 1100 7100 50  0001 C CNN "MountType"
 	1    1100 7100
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR011
 U 1 1 5E763BAC
 P 1100 7450
-F 0 "#PWR?" H 1100 7200 50  0001 C CNN
+F 0 "#PWR011" H 1100 7200 50  0001 C CNN
 F 1 "GND" V 1105 7322 50  0000 R CNN
 F 2 "" H 1100 7450 50  0001 C CNN
 F 3 "" H 1100 7450 50  0001 C CNN
@@ -74,10 +81,10 @@ F 3 "" H 1100 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR010
 U 1 1 5E764BDD
 P 1100 6250
-F 0 "#PWR?" H 1100 6100 50  0001 C CNN
+F 0 "#PWR010" H 1100 6100 50  0001 C CNN
 F 1 "+3.3V" V 1100 6500 50  0000 C CNN
 F 2 "" H 1100 6250 50  0001 C CNN
 F 3 "" H 1100 6250 50  0001 C CNN
@@ -90,14 +97,16 @@ U 1 1 5E7676F4
 P 1100 6550
 AR Path="/5E7676F4" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/5E7676F4" Ref="R?"  Part="1" 
-AR Path="/60084FF3/5E7676F4" Ref="R?"  Part="1" 
-F 0 "R?" H 1170 6596 50  0000 L CNN
+AR Path="/60084FF3/5E7676F4" Ref="R1"  Part="1" 
+F 0 "R1" H 1170 6596 50  0000 L CNN
 F 1 "10k" H 1170 6505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1030 6550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811081617_YAGEO-RC0603JR-0710KL_C99198.pdf" H 1100 6550 50  0001 C CNN
 F 4 "YAGEO" H 1100 6550 50  0001 C CNN "Manufacturer"
 F 5 "RC0603JR-0710KL" H 1100 6550 50  0001 C CNN "PartNumber"
 F 6 "10K ±5% 1/10W ±100ppm/℃ 0603 Chip Resistor - Surface Mount" H 1100 6550 50  0001 C CNN "Description"
+F 7 "MOUNT" H 1100 6550 50  0001 C CNN "Mount"
+F 8 "SMD" H 1100 6550 50  0001 C CNN "MountType"
 	1    1100 6550
 	1    0    0    -1  
 $EndComp
@@ -120,14 +129,16 @@ U 1 1 5E76BDC3
 P 850 7100
 AR Path="/5E76BDC3" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E76BDC3" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E76BDC3" Ref="C?"  Part="1" 
-F 0 "C?" H 965 7146 50  0000 L CNN
+AR Path="/60084FF3/5E76BDC3" Ref="C1"  Part="1" 
+F 0 "C1" H 965 7146 50  0000 L CNN
 F 1 "10nF" H 965 7055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 888 6950 50  0001 C CNN
-F 3 "" H 850 7100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL31B103KBCNNNC_C153292.pdf" H 850 7100 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 850 7100 50  0001 C CNN "Manufacturer"
-F 5 "" H 850 7100 50  0001 C CNN "PartNumber"
-F 6 "10nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 850 7100 50  0001 C CNN "Description"
+F 5 "CL31B103KBCNNNC" H 850 7100 50  0001 C CNN "PartNumber"
+F 6 "10nF ±10% 50V X7R 1206 Multilayer Ceramic Capacitors" H 850 7100 50  0001 C CNN "Description"
+F 7 "MOUNT" H 850 7100 50  0001 C CNN "Mount"
+F 8 "SMD" H 850 7100 50  0001 C CNN "MountType"
 	1    850  7100
 	-1   0    0    -1  
 $EndComp
@@ -152,14 +163,16 @@ U 1 1 5E7ADCD6
 P 2500 6800
 AR Path="/5E7ADCD6" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E7ADCD6" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E7ADCD6" Ref="C?"  Part="1" 
-F 0 "C?" H 2615 6846 50  0000 L CNN
+AR Path="/60084FF3/5E7ADCD6" Ref="C2"  Part="1" 
+F 0 "C2" H 2615 6846 50  0000 L CNN
 F 1 "10pF" H 2615 6755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 6650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810261513_Samsung-Electro-Mechanics-CL10C100JB8NNNC_C1634.pdf" H 2500 6800 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 2500 6800 50  0001 C CNN "Manufacturer"
 F 5 "CL10C100JB8NNNC" H 2500 6800 50  0001 C CNN "PartNumber"
 F 6 "10pF ±5% 50V C0G 0603 Multilayer Ceramic Capacitors MLCC" H 2500 6800 50  0001 C CNN "Description"
+F 7 "MOUNT" H 2500 6800 50  0001 C CNN "Mount"
+F 8 "SMD" H 2500 6800 50  0001 C CNN "MountType"
 	1    2500 6800
 	0    1    -1   0   
 $EndComp
@@ -174,10 +187,10 @@ Wire Wire Line
 Wire Wire Line
 	2850 7400 2650 7400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 5E7B567F
 P 2350 7100
-F 0 "#PWR?" H 2350 6850 50  0001 C CNN
+F 0 "#PWR012" H 2350 6850 50  0001 C CNN
 F 1 "GND" V 2355 6972 50  0000 R CNN
 F 2 "" H 2350 7100 50  0001 C CNN
 F 3 "" H 2350 7100 50  0001 C CNN
@@ -194,23 +207,22 @@ HFQ2
 Wire Wire Line
 	3250 6800 2850 6800
 Connection ~ 2850 6800
-Wire Wire Line
-	3250 7400 2850 7400
-Connection ~ 2850 7400
 $Comp
 L Device:C C?
 U 1 1 5E7ECE28
 P 8150 6050
 AR Path="/5E7ECE28" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E7ECE28" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E7ECE28" Ref="C?"  Part="1" 
-F 0 "C?" H 8265 6096 50  0000 L CNN
+AR Path="/60084FF3/5E7ECE28" Ref="C4"  Part="1" 
+F 0 "C4" H 8265 6096 50  0000 L CNN
 F 1 "100nF" H 8265 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8188 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810191215_Samsung-Electro-Mechanics-CL21B104KBCNNNC_C1711.pdf" H 8150 6050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf" H 8150 6050 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 8150 6050 50  0001 C CNN "Manufacturer"
-F 5 "CL21B104KBCNNNC" H 8150 6050 50  0001 C CNN "PartNumber"
-F 6 "100nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 8150 6050 50  0001 C CNN "Description"
+F 5 "CL10B104KC8NNNC" H 8150 6050 50  0001 C CNN "PartNumber"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors" H 8150 6050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 8150 6050 50  0001 C CNN "Mount"
+F 8 "SMD" H 8150 6050 50  0001 C CNN "MountType"
 	1    8150 6050
 	-1   0    0    -1  
 $EndComp
@@ -220,14 +232,16 @@ U 1 1 5E7EF417
 P 8650 6050
 AR Path="/5E7EF417" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E7EF417" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E7EF417" Ref="C?"  Part="1" 
-F 0 "C?" H 8765 6096 50  0000 L CNN
+AR Path="/60084FF3/5E7EF417" Ref="C5"  Part="1" 
+F 0 "C5" H 8765 6096 50  0000 L CNN
 F 1 "100nF" H 8765 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8688 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810191215_Samsung-Electro-Mechanics-CL21B104KBCNNNC_C1711.pdf" H 8650 6050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8688 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf" H 8650 6050 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 8650 6050 50  0001 C CNN "Manufacturer"
-F 5 "CL21B104KBCNNNC" H 8650 6050 50  0001 C CNN "PartNumber"
-F 6 "100nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 8650 6050 50  0001 C CNN "Description"
+F 5 "CL10B104KC8NNNC" H 8650 6050 50  0001 C CNN "PartNumber"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors" H 8650 6050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 8650 6050 50  0001 C CNN "Mount"
+F 8 "SMD" H 8650 6050 50  0001 C CNN "MountType"
 	1    8650 6050
 	-1   0    0    -1  
 $EndComp
@@ -237,14 +251,16 @@ U 1 1 5E7EF778
 P 9150 6050
 AR Path="/5E7EF778" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E7EF778" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E7EF778" Ref="C?"  Part="1" 
-F 0 "C?" H 9265 6096 50  0000 L CNN
+AR Path="/60084FF3/5E7EF778" Ref="C6"  Part="1" 
+F 0 "C6" H 9265 6096 50  0000 L CNN
 F 1 "100nF" H 9265 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9188 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810191215_Samsung-Electro-Mechanics-CL21B104KBCNNNC_C1711.pdf" H 9150 6050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9188 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf" H 9150 6050 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 9150 6050 50  0001 C CNN "Manufacturer"
-F 5 "CL21B104KBCNNNC" H 9150 6050 50  0001 C CNN "PartNumber"
-F 6 "100nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 9150 6050 50  0001 C CNN "Description"
+F 5 "CL10B104KC8NNNC" H 9150 6050 50  0001 C CNN "PartNumber"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors" H 9150 6050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 9150 6050 50  0001 C CNN "Mount"
+F 8 "SMD" H 9150 6050 50  0001 C CNN "MountType"
 	1    9150 6050
 	-1   0    0    -1  
 $EndComp
@@ -254,14 +270,16 @@ U 1 1 5E7EFBCB
 P 9650 6050
 AR Path="/5E7EFBCB" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E7EFBCB" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E7EFBCB" Ref="C?"  Part="1" 
-F 0 "C?" H 9765 6096 50  0000 L CNN
+AR Path="/60084FF3/5E7EFBCB" Ref="C7"  Part="1" 
+F 0 "C7" H 9765 6096 50  0000 L CNN
 F 1 "100nF" H 9765 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9688 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810191215_Samsung-Electro-Mechanics-CL21B104KBCNNNC_C1711.pdf" H 9650 6050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9688 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf" H 9650 6050 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 9650 6050 50  0001 C CNN "Manufacturer"
-F 5 "CL21B104KBCNNNC" H 9650 6050 50  0001 C CNN "PartNumber"
-F 6 "100nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 9650 6050 50  0001 C CNN "Description"
+F 5 "CL10B104KC8NNNC" H 9650 6050 50  0001 C CNN "PartNumber"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors" H 9650 6050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 9650 6050 50  0001 C CNN "Mount"
+F 8 "SMD" H 9650 6050 50  0001 C CNN "MountType"
 	1    9650 6050
 	-1   0    0    -1  
 $EndComp
@@ -279,10 +297,10 @@ Wire Wire Line
 Connection ~ 8650 5900
 Connection ~ 9150 5900
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR019
 U 1 1 5E81119B
 P 9400 5900
-F 0 "#PWR?" H 9400 5750 50  0001 C CNN
+F 0 "#PWR019" H 9400 5750 50  0001 C CNN
 F 1 "+3.3V" V 9400 6150 50  0000 C CNN
 F 2 "" H 9400 5900 50  0001 C CNN
 F 3 "" H 9400 5900 50  0001 C CNN
@@ -290,24 +308,26 @@ F 3 "" H 9400 5900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J?
+L Connector_Generic:Conn_02x04_Odd_Even J3
 U 1 1 5E82E2E3
 P 5300 7050
-F 0 "J?" H 5350 7367 50  0000 C CNN
+F 0 "J3" H 5350 7367 50  0000 C CNN
 F 1 "DEBUG" H 5350 7276 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x04_P2.00mm_Vertical" H 5350 7275 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_MINTRON-MTP220-1204S1_C376087.pdf" H 5300 7050 50  0001 C CNN
 F 4 "Pin Header Male Pin 0.079\"(2.00mm) 8 2 Through Hole,P=2mm Pin Header & Female Header" H 5300 7050 50  0001 C CNN "Description"
 F 5 "MINTRON" H 5300 7050 50  0001 C CNN "Manufacturer"
 F 6 "MTP220-1204S1" H 5300 7050 50  0001 C CNN "PartNumber"
+F 7 "DO NOT MOUNT" H 5300 7050 50  0001 C CNN "Mount"
+F 8 "TH" H 5300 7050 50  0001 C CNN "MountType"
 	1    5300 7050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR017
 U 1 1 5E8314D2
 P 5700 6800
-F 0 "#PWR?" H 5700 6650 50  0001 C CNN
+F 0 "#PWR017" H 5700 6650 50  0001 C CNN
 F 1 "+3.3V" V 5700 7050 50  0000 C CNN
 F 2 "" H 5700 6800 50  0001 C CNN
 F 3 "" H 5700 6800 50  0001 C CNN
@@ -315,10 +335,10 @@ F 3 "" H 5700 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR018
 U 1 1 5E831C61
 P 5700 7400
-F 0 "#PWR?" H 5700 7150 50  0001 C CNN
+F 0 "#PWR018" H 5700 7150 50  0001 C CNN
 F 1 "GND" V 5705 7272 50  0000 R CNN
 F 2 "" H 5700 7400 50  0001 C CNN
 F 3 "" H 5700 7400 50  0001 C CNN
@@ -366,26 +386,28 @@ Wire Wire Line
 Wire Wire Line
 	4950 3250 4550 3250
 $Comp
-L Device:Crystal_GND24 ZQ?
+L Device:Crystal_GND24 ZQ1
 U 1 1 5EA5C4C4
 P 2850 7100
-F 0 "ZQ?" V 2804 7344 50  0000 L CNN
-F 1 "12MHz" V 2895 7344 50  0000 L CNN
+F 0 "ZQ1" V 2804 7344 50  0000 L CNN
+F 1 "8MHz" V 2895 7344 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2850 7100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_TXC-Corp-7V12000005_C337203.pdf" H 2850 7100 50  0001 C CNN
 F 4 "12MHz ±10ppm 10pF 80Ω SMD-3225 SMD Crystal Resonators" H 2850 7100 50  0001 C CNN "Description"
 F 5 "TXC Corp" H 2850 7100 50  0001 C CNN "Manufacturer"
 F 6 "7V12000005" H 2850 7100 50  0001 C CNN "PartNumber"
+F 7 "MOUNT" H 2850 7100 50  0001 C CNN "Mount"
+F 8 "SMD" H 2850 7100 50  0001 C CNN "MountType"
 	1    2850 7100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2650 7100 2350 7100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR013
 U 1 1 5EA690A7
 P 3400 7100
-F 0 "#PWR?" H 3400 6850 50  0001 C CNN
+F 0 "#PWR013" H 3400 6850 50  0001 C CNN
 F 1 "GND" V 3405 6972 50  0000 R CNN
 F 2 "" H 3400 7100 50  0001 C CNN
 F 3 "" H 3400 7100 50  0001 C CNN
@@ -400,14 +422,16 @@ U 1 1 5EE41001
 P 4550 7150
 AR Path="/5EE41001" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/5EE41001" Ref="R?"  Part="1" 
-AR Path="/60084FF3/5EE41001" Ref="R?"  Part="1" 
-F 0 "R?" V 4650 7200 50  0000 L CNN
+AR Path="/60084FF3/5EE41001" Ref="R7"  Part="1" 
+F 0 "R7" V 4650 7200 50  0000 L CNN
 F 1 "22" V 4650 7050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 7150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 4550 7150 50  0001 C CNN
 F 4 "YAGEO" H 4550 7150 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0722RL" H 4550 7150 50  0001 C CNN "PartNumber"
 F 6 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 4550 7150 50  0001 C CNN "Description"
+F 7 "MOUNT" H 4550 7150 50  0001 C CNN "Mount"
+F 8 "SMD" H 4550 7150 50  0001 C CNN "MountType"
 	1    4550 7150
 	0    1    -1   0   
 $EndComp
@@ -417,14 +441,16 @@ U 1 1 5EE556D6
 P 4550 7350
 AR Path="/5EE556D6" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/5EE556D6" Ref="R?"  Part="1" 
-AR Path="/60084FF3/5EE556D6" Ref="R?"  Part="1" 
-F 0 "R?" V 4650 7400 50  0000 L CNN
+AR Path="/60084FF3/5EE556D6" Ref="R8"  Part="1" 
+F 0 "R8" V 4650 7400 50  0000 L CNN
 F 1 "22" V 4650 7250 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 7350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 4550 7350 50  0001 C CNN
 F 4 "YAGEO" H 4550 7350 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0722RL" H 4550 7350 50  0001 C CNN "PartNumber"
 F 6 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 4550 7350 50  0001 C CNN "Description"
+F 7 "MOUNT" H 4550 7350 50  0001 C CNN "Mount"
+F 8 "SMD" H 4550 7350 50  0001 C CNN "MountType"
 	1    4550 7350
 	0    1    -1   0   
 $EndComp
@@ -434,14 +460,16 @@ U 1 1 5EE55A17
 P 4550 6950
 AR Path="/5EE55A17" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/5EE55A17" Ref="R?"  Part="1" 
-AR Path="/60084FF3/5EE55A17" Ref="R?"  Part="1" 
-F 0 "R?" V 4650 7000 50  0000 L CNN
+AR Path="/60084FF3/5EE55A17" Ref="R6"  Part="1" 
+F 0 "R6" V 4650 7000 50  0000 L CNN
 F 1 "22" V 4650 6850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 6950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 4550 6950 50  0001 C CNN
 F 4 "YAGEO" H 4550 6950 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0722RL" H 4550 6950 50  0001 C CNN "PartNumber"
 F 6 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 4550 6950 50  0001 C CNN "Description"
+F 7 "MOUNT" H 4550 6950 50  0001 C CNN "Mount"
+F 8 "SMD" H 4550 6950 50  0001 C CNN "MountType"
 	1    4550 6950
 	0    1    -1   0   
 $EndComp
@@ -471,14 +499,16 @@ U 1 1 5EE9BE69
 P 5900 7150
 AR Path="/5EE9BE69" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/5EE9BE69" Ref="R?"  Part="1" 
-AR Path="/60084FF3/5EE9BE69" Ref="R?"  Part="1" 
-F 0 "R?" V 6000 7200 50  0000 L CNN
+AR Path="/60084FF3/5EE9BE69" Ref="R10"  Part="1" 
+F 0 "R10" V 6000 7200 50  0000 L CNN
 F 1 "22" V 6000 7050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 7150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 5900 7150 50  0001 C CNN
 F 4 "YAGEO" H 5900 7150 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0722RL" H 5900 7150 50  0001 C CNN "PartNumber"
 F 6 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 5900 7150 50  0001 C CNN "Description"
+F 7 "MOUNT" H 5900 7150 50  0001 C CNN "Mount"
+F 8 "SMD" H 5900 7150 50  0001 C CNN "MountType"
 	1    5900 7150
 	0    1    1    0   
 $EndComp
@@ -488,14 +518,16 @@ U 1 1 5EEBB073
 P 5900 7050
 AR Path="/5EEBB073" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/5EEBB073" Ref="R?"  Part="1" 
-AR Path="/60084FF3/5EEBB073" Ref="R?"  Part="1" 
-F 0 "R?" V 6000 7100 50  0000 L CNN
+AR Path="/60084FF3/5EEBB073" Ref="R9"  Part="1" 
+F 0 "R9" V 6000 7100 50  0000 L CNN
 F 1 "22" V 6000 6950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 7050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 5900 7050 50  0001 C CNN
 F 4 "YAGEO" H 5900 7050 50  0001 C CNN "Manufacturer"
 F 5 "RC0603FR-0722RL" H 5900 7050 50  0001 C CNN "PartNumber"
 F 6 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 5900 7050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 5900 7050 50  0001 C CNN "Mount"
+F 8 "SMD" H 5900 7050 50  0001 C CNN "MountType"
 	1    5900 7050
 	0    1    -1   0   
 $EndComp
@@ -510,10 +542,10 @@ Wire Wire Line
 Wire Wire Line
 	6050 7050 6200 7050
 $Comp
-L power:GND #PWR?
+L power:GND #PWR020
 U 1 1 5E87CDF7
 P 9400 6200
-F 0 "#PWR?" H 9400 5950 50  0001 C CNN
+F 0 "#PWR020" H 9400 5950 50  0001 C CNN
 F 1 "GND" V 9405 6072 50  0000 R CNN
 F 2 "" H 9400 6200 50  0001 C CNN
 F 3 "" H 9400 6200 50  0001 C CNN
@@ -530,22 +562,24 @@ U 1 1 5E8E6789
 P 2500 7400
 AR Path="/5E8E6789" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/5E8E6789" Ref="C?"  Part="1" 
-AR Path="/60084FF3/5E8E6789" Ref="C?"  Part="1" 
-F 0 "C?" H 2615 7446 50  0000 L CNN
+AR Path="/60084FF3/5E8E6789" Ref="C3"  Part="1" 
+F 0 "C3" H 2615 7446 50  0000 L CNN
 F 1 "10pF" H 2615 7355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 7250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810261513_Samsung-Electro-Mechanics-CL10C100JB8NNNC_C1634.pdf" H 2500 7400 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 2500 7400 50  0001 C CNN "Manufacturer"
 F 5 "CL10C100JB8NNNC" H 2500 7400 50  0001 C CNN "PartNumber"
 F 6 "10pF ±5% 50V C0G 0603 Multilayer Ceramic Capacitors MLCC" H 2500 7400 50  0001 C CNN "Description"
+F 7 "MOUNT" H 2500 7400 50  0001 C CNN "Mount"
+F 8 "SMD" H 2500 7400 50  0001 C CNN "MountType"
 	1    2500 7400
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR014
 U 1 1 5F659F0B
 P 4800 2200
-F 0 "#PWR?" H 4800 1950 50  0001 C CNN
+F 0 "#PWR014" H 4800 1950 50  0001 C CNN
 F 1 "GND" H 4805 2027 50  0000 C CNN
 F 2 "" H 4800 2200 50  0001 C CNN
 F 3 "" H 4800 2200 50  0001 C CNN
@@ -625,14 +659,16 @@ U 1 1 600A80DA
 P 10050 6050
 AR Path="/600A80DA" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/600A80DA" Ref="C?"  Part="1" 
-AR Path="/60084FF3/600A80DA" Ref="C?"  Part="1" 
-F 0 "C?" H 10165 6096 50  0000 L CNN
+AR Path="/60084FF3/600A80DA" Ref="C8"  Part="1" 
+F 0 "C8" H 10165 6096 50  0000 L CNN
 F 1 "100nF" H 10165 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10088 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810191215_Samsung-Electro-Mechanics-CL21B104KBCNNNC_C1711.pdf" H 10050 6050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10088 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf" H 10050 6050 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 10050 6050 50  0001 C CNN "Manufacturer"
-F 5 "CL21B104KBCNNNC" H 10050 6050 50  0001 C CNN "PartNumber"
-F 6 "100nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 10050 6050 50  0001 C CNN "Description"
+F 5 "CL10B104KC8NNNC" H 10050 6050 50  0001 C CNN "PartNumber"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors" H 10050 6050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 10050 6050 50  0001 C CNN "Mount"
+F 8 "SMD" H 10050 6050 50  0001 C CNN "MountType"
 	1    10050 6050
 	-1   0    0    -1  
 $EndComp
@@ -648,14 +684,16 @@ U 1 1 600A85E9
 P 10550 6050
 AR Path="/600A85E9" Ref="C?"  Part="1" 
 AR Path="/5E7B14DC/600A85E9" Ref="C?"  Part="1" 
-AR Path="/60084FF3/600A85E9" Ref="C?"  Part="1" 
-F 0 "C?" H 10665 6096 50  0000 L CNN
+AR Path="/60084FF3/600A85E9" Ref="C9"  Part="1" 
+F 0 "C9" H 10665 6096 50  0000 L CNN
 F 1 "100nF" H 10665 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10588 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810191215_Samsung-Electro-Mechanics-CL21B104KBCNNNC_C1711.pdf" H 10550 6050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10588 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL10B104KC8NNNC_C15725.pdf" H 10550 6050 50  0001 C CNN
 F 4 "Samsung Electro-Mechanics" H 10550 6050 50  0001 C CNN "Manufacturer"
-F 5 "CL21B104KBCNNNC" H 10550 6050 50  0001 C CNN "PartNumber"
-F 6 "100nF ±10% 50V X7R 0805 Multilayer Ceramic Capacitors" H 10550 6050 50  0001 C CNN "Description"
+F 5 "CL10B104KC8NNNC" H 10550 6050 50  0001 C CNN "PartNumber"
+F 6 "100nF ±10% 100V X7R 0603 Multilayer Ceramic Capacitors" H 10550 6050 50  0001 C CNN "Description"
+F 7 "MOUNT" H 10550 6050 50  0001 C CNN "Mount"
+F 8 "SMD" H 10550 6050 50  0001 C CNN "MountType"
 	1    10550 6050
 	-1   0    0    -1  
 $EndComp
@@ -703,13 +741,18 @@ CAN1_STB
 Wire Wire Line
 	6550 4150 6350 4150
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 600DEC6A
 P 1450 4000
-F 0 "D?" H 1450 3900 50  0000 C CNN
-F 1 "LED" H 1443 3836 50  0001 C CNN
-F 2 "" H 1450 4000 50  0001 C CNN
-F 3 "~" H 1450 4000 50  0001 C CNN
+F 0 "D1" H 1450 3900 50  0000 C CNN
+F 1 "LED GREEN" H 1443 3836 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1450 4000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810231512_Lite-On-LTST-C170KGKT_C98221.pdf" H 1450 4000 50  0001 C CNN
+F 4 "MOUNT" H 1450 4000 50  0001 C CNN "Mount"
+F 5 "SMD" H 1450 4000 50  0001 C CNN "MountType"
+F 6 "Lite-On" H 1450 4000 50  0001 C CNN "Manufacturer"
+F 7 "Green 567.5~576.5nm 0805 Light Emitting Diodes (LED) RoHS" H 1450 4000 50  0001 C CNN "Description"
+F 8 "LTST-C170KGKT" H 1450 4000 50  0001 C CNN "PartNumber"
 	1    1450 4000
 	1    0    0    1   
 $EndComp
@@ -719,24 +762,26 @@ U 1 1 600DF420
 P 1900 4000
 AR Path="/600DF420" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/600DF420" Ref="R?"  Part="1" 
-AR Path="/60084FF3/600DF420" Ref="R?"  Part="1" 
-F 0 "R?" V 2000 3950 50  0000 L CNN
+AR Path="/60084FF3/600DF420" Ref="R2"  Part="1" 
+F 0 "R2" V 2000 3950 50  0000 L CNN
 F 1 "680" V 1800 3950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 4000 50  0001 C CNN
-F 3 "" H 1900 4000 50  0001 C CNN
-F 4 "" H 1900 4000 50  0001 C CNN "Manufacturer"
-F 5 "" H 1900 4000 50  0001 C CNN "PartNumber"
-F 6 "680 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 1900 4000 50  0001 C CNN "Description"
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-RC0603FR-07680RL_C112310.pdf" H 1900 4000 50  0001 C CNN
+F 4 "YAGEO" H 1900 4000 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07680RL" H 1900 4000 50  0001 C CNN "PartNumber"
+F 6 "680Ω ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 1900 4000 50  0001 C CNN "Description"
+F 7 "MOUNT" H 1900 4000 50  0001 C CNN "Mount"
+F 8 "SMD" H 1900 4000 50  0001 C CNN "MountType"
 	1    1900 4000
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	1600 4000 1750 4000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR07
 U 1 1 600E2644
 P 1100 4000
-F 0 "#PWR?" H 1100 3750 50  0001 C CNN
+F 0 "#PWR07" H 1100 3750 50  0001 C CNN
 F 1 "GND" V 1105 3872 50  0000 R CNN
 F 2 "" H 1100 4000 50  0001 C CNN
 F 3 "" H 1100 4000 50  0001 C CNN
@@ -748,13 +793,18 @@ Wire Wire Line
 Wire Wire Line
 	2350 4000 2050 4000
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 600E8C96
 P 1450 4400
-F 0 "D?" H 1450 4300 50  0000 C CNN
-F 1 "LED" H 1443 4236 50  0001 C CNN
-F 2 "" H 1450 4400 50  0001 C CNN
-F 3 "~" H 1450 4400 50  0001 C CNN
+F 0 "D2" H 1450 4300 50  0000 C CNN
+F 1 "LED RED" H 1443 4236 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1450 4400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811141820_Lite-On-LTST-C170KRKT_C94868.pdf" H 1450 4400 50  0001 C CNN
+F 4 "MOUNT" H 1450 4400 50  0001 C CNN "Mount"
+F 5 "SMD" H 1450 4400 50  0001 C CNN "MountType"
+F 6 "Lite-On" H 1450 4400 50  0001 C CNN "Manufacturer"
+F 7 "Red 631~639nm 0805 Light Emitting Diodes (LED) RoHS" H 1450 4400 50  0001 C CNN "Description"
+F 8 "LTST-C170KRKT" H 1450 4400 50  0001 C CNN "PartNumber"
 	1    1450 4400
 	1    0    0    1   
 $EndComp
@@ -764,24 +814,26 @@ U 1 1 600E8C9F
 P 1900 4400
 AR Path="/600E8C9F" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/600E8C9F" Ref="R?"  Part="1" 
-AR Path="/60084FF3/600E8C9F" Ref="R?"  Part="1" 
-F 0 "R?" V 2000 4350 50  0000 L CNN
+AR Path="/60084FF3/600E8C9F" Ref="R3"  Part="1" 
+F 0 "R3" V 2000 4350 50  0000 L CNN
 F 1 "680" V 1800 4350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 4400 50  0001 C CNN
-F 3 "" H 1900 4400 50  0001 C CNN
-F 4 "" H 1900 4400 50  0001 C CNN "Manufacturer"
-F 5 "" H 1900 4400 50  0001 C CNN "PartNumber"
-F 6 "680 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 1900 4400 50  0001 C CNN "Description"
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-RC0603FR-07680RL_C112310.pdf" H 1900 4400 50  0001 C CNN
+F 4 "YAGEO" H 1900 4400 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07680RL" H 1900 4400 50  0001 C CNN "PartNumber"
+F 6 "680Ω ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 1900 4400 50  0001 C CNN "Description"
+F 7 "MOUNT" H 1900 4400 50  0001 C CNN "Mount"
+F 8 "SMD" H 1900 4400 50  0001 C CNN "MountType"
 	1    1900 4400
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	1600 4400 1750 4400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 600E8CA6
 P 1100 4400
-F 0 "#PWR?" H 1100 4150 50  0001 C CNN
+F 0 "#PWR08" H 1100 4150 50  0001 C CNN
 F 1 "GND" V 1105 4272 50  0000 R CNN
 F 2 "" H 1100 4400 50  0001 C CNN
 F 3 "" H 1100 4400 50  0001 C CNN
@@ -793,13 +845,18 @@ Wire Wire Line
 Wire Wire Line
 	2350 4400 2050 4400
 $Comp
-L Device:LED D?
+L Device:LED D3
 U 1 1 600EC13A
 P 1450 4800
-F 0 "D?" H 1450 4700 50  0000 C CNN
-F 1 "LED" H 1443 4636 50  0001 C CNN
-F 2 "" H 1450 4800 50  0001 C CNN
-F 3 "~" H 1450 4800 50  0001 C CNN
+F 0 "D3" H 1450 4700 50  0000 C CNN
+F 1 "LED ORANGE" H 1443 4636 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1450 4800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810301632_Lite-On-LTST-C171KFKT_C284932.pdf" H 1450 4800 50  0001 C CNN
+F 4 "MOUNT" H 1450 4800 50  0001 C CNN "Mount"
+F 5 "SMD" H 1450 4800 50  0001 C CNN "MountType"
+F 6 "Lite-On" H 1450 4800 50  0001 C CNN "Manufacturer"
+F 7 "Orange 605nm 0805 Light Emitting Diodes (LED) RoHS" H 1450 4800 50  0001 C CNN "Description"
+F 8 "LTST-C171KFKT" H 1450 4800 50  0001 C CNN "PartNumber"
 	1    1450 4800
 	1    0    0    1   
 $EndComp
@@ -809,24 +866,26 @@ U 1 1 600EC143
 P 1900 4800
 AR Path="/600EC143" Ref="R?"  Part="1" 
 AR Path="/5E7B14DC/600EC143" Ref="R?"  Part="1" 
-AR Path="/60084FF3/600EC143" Ref="R?"  Part="1" 
-F 0 "R?" V 2000 4750 50  0000 L CNN
+AR Path="/60084FF3/600EC143" Ref="R4"  Part="1" 
+F 0 "R4" V 2000 4750 50  0000 L CNN
 F 1 "680" V 1800 4750 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 4800 50  0001 C CNN
-F 3 "" H 1900 4800 50  0001 C CNN
-F 4 "" H 1900 4800 50  0001 C CNN "Manufacturer"
-F 5 "" H 1900 4800 50  0001 C CNN "PartNumber"
-F 6 "680 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 1900 4800 50  0001 C CNN "Description"
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-RC0603FR-07680RL_C112310.pdf" H 1900 4800 50  0001 C CNN
+F 4 "YAGEO" H 1900 4800 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07680RL" H 1900 4800 50  0001 C CNN "PartNumber"
+F 6 "680Ω ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 1900 4800 50  0001 C CNN "Description"
+F 7 "MOUNT" H 1900 4800 50  0001 C CNN "Mount"
+F 8 "SMD" H 1900 4800 50  0001 C CNN "MountType"
 	1    1900 4800
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	1600 4800 1750 4800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR09
 U 1 1 600EC14A
 P 1100 4800
-F 0 "#PWR?" H 1100 4550 50  0001 C CNN
+F 0 "#PWR09" H 1100 4550 50  0001 C CNN
 F 1 "GND" V 1105 4672 50  0000 R CNN
 F 2 "" H 1100 4800 50  0001 C CNN
 F 3 "" H 1100 4800 50  0001 C CNN
@@ -2786,4 +2845,28 @@ Wire Wire Line
 	4550 3650 4950 3650
 Wire Wire Line
 	4950 3750 4550 3750
+$Comp
+L Device:R R?
+U 1 1 6010E925
+P 3050 7400
+AR Path="/6010E925" Ref="R?"  Part="1" 
+AR Path="/5E7B14DC/6010E925" Ref="R?"  Part="1" 
+AR Path="/60084FF3/6010E925" Ref="R5"  Part="1" 
+F 0 "R5" V 3150 7450 50  0000 L CNN
+F 1 "22" V 3150 7300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2980 7400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 3050 7400 50  0001 C CNN
+F 4 "YAGEO" H 3050 7400 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0722RL" H 3050 7400 50  0001 C CNN "PartNumber"
+F 6 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 3050 7400 50  0001 C CNN "Description"
+F 7 "MOUNT" H 3050 7400 50  0001 C CNN "Mount"
+F 8 "SMD" H 3050 7400 50  0001 C CNN "MountType"
+	1    3050 7400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 7400 2900 7400
+Connection ~ 2850 7400
+Wire Wire Line
+	3200 7400 3250 7400
 $EndSCHEMATC
