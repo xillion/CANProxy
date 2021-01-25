@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1800 2700 0    50   Input ~ 0
+Text HLabel 1650 2700 0    50   Input ~ 0
 ECU
 $Comp
 L Phone_CC1310-rescue:LM3940IMP-3.3-Regulator_Linear U8
@@ -102,15 +102,15 @@ $EndComp
 $Comp
 L Device:L_Core_Iron L1
 U 1 1 600A9E46
-P 2850 2700
-F 0 "L1" V 2983 2700 50  0000 C CNN
-F 1 "L_Core_Iron" V 2984 2700 50  0001 C CNN
-F 2 "" H 2850 2700 50  0001 C CNN
-F 3 "~" H 2850 2700 50  0001 C CNN
-F 4 "MOUNT" H 2850 2700 50  0001 C CNN "Mount"
-F 5 "SMD" H 2850 2700 50  0001 C CNN "MountType"
-F 6 "-" H 2850 2700 50  0001 C CNN "Manufacturer"
-	1    2850 2700
+P 2450 2700
+F 0 "L1" V 2583 2700 50  0000 C CNN
+F 1 "L_Core_Iron" V 2584 2700 50  0001 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 2450 2700 50  0001 C CNN
+F 3 "~" H 2450 2700 50  0001 C CNN
+F 4 "MOUNT" H 2450 2700 50  0001 C CNN "Mount"
+F 5 "SMD" H 2450 2700 50  0001 C CNN "MountType"
+F 6 "-" H 2450 2700 50  0001 C CNN "Manufacturer"
+	1    2450 2700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -118,8 +118,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 2700 3100 2800
 Connection ~ 3100 2700
-Wire Wire Line
-	1800 2700 2000 2700
 Wire Wire Line
 	4800 2700 5000 2700
 Wire Wire Line
@@ -222,39 +220,62 @@ Connection ~ 7200 2700
 Wire Wire Line
 	7200 2700 7300 2700
 $Comp
-L Device:D_Schottky D10
+L Device:D_Schottky D11
 U 1 1 600DD919
-P 2150 2700
-F 0 "D10" H 2150 2576 50  0000 C CNN
-F 1 "MBR0530T1G" H 2150 2575 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 2150 2700 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR0530T1G_C82046.pdf" H 2150 2700 50  0001 C CNN
-F 4 "30V 500mA 430mV @ 500mA SOD-123 Schottky Barrier Diodes" H 2150 2700 50  0001 C CNN "Description"
-F 5 "ON Semiconductor" H 2150 2700 50  0001 C CNN "Manufacturer"
-F 6 "MOUNT" H 2150 2700 50  0001 C CNN "Mount"
-F 7 "SMD" H 2150 2700 50  0001 C CNN "MountType"
-F 8 "MBR0530T1G" H 2150 2700 50  0001 C CNN "PartNumber"
-	1    2150 2700
+P 2850 2700
+F 0 "D11" H 2850 2450 50  0000 C CNN
+F 1 "MBR0530T1G" H 2800 2550 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 2850 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR0530T1G_C82046.pdf" H 2850 2700 50  0001 C CNN
+F 4 "30V 500mA 430mV @ 500mA SOD-123 Schottky Barrier Diodes" H 2850 2700 50  0001 C CNN "Description"
+F 5 "ON Semiconductor" H 2850 2700 50  0001 C CNN "Manufacturer"
+F 6 "MOUNT" H 2850 2700 50  0001 C CNN "Mount"
+F 7 "SMD" H 2850 2700 50  0001 C CNN "MountType"
+F 8 "MBR0530T1G" H 2850 2700 50  0001 C CNN "PartNumber"
+	1    2850 2700
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 600DEBDF
-P 2500 2700
-F 0 "F1" V 2387 2700 50  0000 C CNN
-F 1 "1206L025YR" V 2386 2700 50  0001 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 2550 2500 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Littelfuse-1206L025YR_C99561.pdf" H 2500 2700 50  0001 C CNN
-F 4 "Polymeric 16V 500mA 100ms 750mΩ 1206 PTC Resettable Fuses RoHS" H 2500 2700 50  0001 C CNN "Description"
-F 5 "Littelfuse" H 2500 2700 50  0001 C CNN "Manufacturer"
-F 6 "MOUNT" H 2500 2700 50  0001 C CNN "Mount"
-F 7 "SMD" H 2500 2700 50  0001 C CNN "MountType"
-F 8 "1206L025YR" H 2500 2700 50  0001 C CNN "PartNumber"
-	1    2500 2700
+P 1900 2700
+F 0 "F1" V 1787 2700 50  0000 C CNN
+F 1 "1206L025YR" V 1786 2700 50  0001 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 1950 2500 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Littelfuse-1206L025YR_C99561.pdf" H 1900 2700 50  0001 C CNN
+F 4 "Polymeric 16V 500mA 100ms 750mΩ 1206 PTC Resettable Fuses RoHS" H 1900 2700 50  0001 C CNN "Description"
+F 5 "Littelfuse" H 1900 2700 50  0001 C CNN "Manufacturer"
+F 6 "MOUNT" H 1900 2700 50  0001 C CNN "Mount"
+F 7 "SMD" H 1900 2700 50  0001 C CNN "MountType"
+F 8 "1206L025YR" H 1900 2700 50  0001 C CNN "PartNumber"
+	1    1900 2700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2300 2700 2400 2700
+	2000 2700 2200 2700
+$Comp
+L Device:D_TVS D10
+U 1 1 600F6140
+P 2200 2950
+F 0 "D10" V 2154 3029 50  0000 L CNN
+F 1 "5KP15CA" V 2245 3029 50  0000 L CNN
+F 2 "Diode_THT:D_5KP_P10.16mm_Horizontal" H 2200 2950 50  0001 C CNN
+F 3 "https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_5kp_datasheet.pdf.pdf" H 2200 2950 50  0001 C CNN
+	1    2200 2950
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	2600 2700 2700 2700
+	2700 2700 2600 2700
+Wire Wire Line
+	2200 2700 2200 2800
+Wire Wire Line
+	2200 3100 2200 3250
+Connection ~ 3100 3250
+Connection ~ 2200 2700
+Wire Wire Line
+	2200 2700 2300 2700
+Wire Wire Line
+	1650 2700 1800 2700
+Wire Wire Line
+	2200 3250 3100 3250
 $EndSCHEMATC

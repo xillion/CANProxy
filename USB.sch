@@ -109,10 +109,12 @@ AR Path="/60084FF3/600A49FC/60090735" Ref="R14"  Part="1"
 F 0 "R14" V 4900 2150 50  0000 C CNN
 F 1 "22" V 5100 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 2150 50  0001 C CNN
-F 3 "~" H 5000 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 5000 2150 50  0001 C CNN
 F 4 "MOUNT" H 5000 2150 50  0001 C CNN "Mount"
 F 5 "SMD" H 5000 2150 50  0001 C CNN "MountType"
-F 6 "-" H 5000 2150 50  0001 C CNN "Manufacturer"
+F 6 "YAGEO" H 5000 2150 50  0001 C CNN "Manufacturer"
+F 7 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 5000 2150 50  0001 C CNN "Description"
+F 8 "RC0603FR-0722RL" H 5000 2150 50  0001 C CNN "PartNumber"
 	1    5000 2150
 	0    1    1    0   
 $EndComp
@@ -125,10 +127,12 @@ AR Path="/60084FF3/600A49FC/60090CC5" Ref="R15"  Part="1"
 F 0 "R15" V 4900 3150 50  0000 C CNN
 F 1 "22" V 5100 3150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 3150 50  0001 C CNN
-F 3 "~" H 5000 3150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1809152003_YAGEO-RC0603FR-0722RL_C107701.pdf" H 5000 3150 50  0001 C CNN
 F 4 "MOUNT" H 5000 3150 50  0001 C CNN "Mount"
 F 5 "SMD" H 5000 3150 50  0001 C CNN "MountType"
-F 6 "-" H 5000 3150 50  0001 C CNN "Manufacturer"
+F 6 "YAGEO" H 5000 3150 50  0001 C CNN "Manufacturer"
+F 7 "22 ±1% 1/10W ±100ppm/°C 0603 Chip Resistor - Surface Mount" H 5000 3150 50  0001 C CNN "Description"
+F 8 "RC0603FR-0722RL" H 5000 3150 50  0001 C CNN "PartNumber"
 	1    5000 3150
 	0    1    1    0   
 $EndComp
@@ -141,10 +145,12 @@ AR Path="/60084FF3/600A49FC/600911C9" Ref="R13"  Part="1"
 F 0 "R13" V 4900 1800 50  0000 C CNN
 F 1 "1.5k" V 5100 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 1800 50  0001 C CNN
-F 3 "~" H 5000 1800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/YAGEO-RC0603FR-071K5L_C114668.pdf" H 5000 1800 50  0001 C CNN
 F 4 "MOUNT" H 5000 1800 50  0001 C CNN "Mount"
 F 5 "SMD" H 5000 1800 50  0001 C CNN "MountType"
-F 6 "-" H 5000 1800 50  0001 C CNN "Manufacturer"
+F 6 "YAGEO" H 5000 1800 50  0001 C CNN "Manufacturer"
+F 7 "1.5kΩ ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 5000 1800 50  0001 C CNN "Description"
+F 8 "RC0603FR-071K5L" H 5000 1800 50  0001 C CNN "PartNumber"
 	1    5000 1800
 	0    1    1    0   
 $EndComp
@@ -195,10 +201,12 @@ AR Path="/60084FF3/600A49FC/60092D30" Ref="R12"  Part="1"
 F 0 "R12" H 2380 3604 50  0000 R CNN
 F 1 "10k" H 2380 3695 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2380 3650 50  0001 C CNN
-F 3 "~" H 2450 3650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811081617_YAGEO-RC0603JR-0710KL_C99198.pdf" H 2450 3650 50  0001 C CNN
 F 4 "MOUNT" H 2450 3650 50  0001 C CNN "Mount"
 F 5 "SMD" H 2450 3650 50  0001 C CNN "MountType"
-F 6 "-" H 2450 3650 50  0001 C CNN "Manufacturer"
+F 6 "YAGEO" H 2450 3650 50  0001 C CNN "Manufacturer"
+F 7 "10K ±5% 1/10W ±100ppm/℃ 0603 Chip Resistor - Surface Mount" H 2450 3650 50  0001 C CNN "Description"
+F 8 "RC0603JR-0710KL" H 2450 3650 50  0001 C CNN "PartNumber"
 	1    2450 3650
 	-1   0    0    1   
 $EndComp
