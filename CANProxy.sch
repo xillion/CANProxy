@@ -85,7 +85,7 @@ Text GLabel 1450 2350 2    50   Input ~ 0
 CAN1_H
 Text GLabel 1450 2450 2    50   Input ~ 0
 CAN1_L
-Text GLabel 1450 2650 2    50   Input ~ 0
+Text GLabel 10250 2350 0    50   Input ~ 0
 LIN1
 Text GLabel 1450 2750 2    50   Input ~ 0
 GND
@@ -116,20 +116,20 @@ Wire Wire Line
 Wire Wire Line
 	1300 2550 1450 2550
 Wire Wire Line
-	1450 2650 1300 2650
+	10250 2350 10400 2350
 Wire Wire Line
 	1300 2750 1450 2750
-Text GLabel 10250 2250 0    50   Input ~ 0
+Text GLabel 10250 2750 0    50   Input ~ 0
 ECU
-Text GLabel 10250 2350 0    50   Input ~ 0
+Text GLabel 10250 2550 0    50   Input ~ 0
 CAN2_H
 Text GLabel 10250 2450 0    50   Input ~ 0
 CAN2_L
-Text GLabel 10250 2650 0    50   Input ~ 0
+Text GLabel 1450 2650 2    50   Input ~ 0
 LIN2
-Text GLabel 10250 2750 0    50   Input ~ 0
+Text GLabel 10250 2250 0    50   Input ~ 0
 GND
-Text GLabel 10250 2550 0    50   Input ~ 0
+Text GLabel 10250 2650 0    50   Input ~ 0
 GND
 $Comp
 L Connector_Generic:Conn_01x06 J2
@@ -150,13 +150,13 @@ $EndComp
 Wire Wire Line
 	10250 2250 10350 2250
 Wire Wire Line
-	10400 2350 10250 2350
+	10400 2450 10250 2450
 Wire Wire Line
-	10250 2450 10400 2450
+	10250 2550 10400 2550
 Wire Wire Line
-	10400 2550 10250 2550
+	10400 2650 10250 2650
 Wire Wire Line
-	10250 2650 10400 2650
+	1450 2650 1300 2650
 Wire Wire Line
 	10400 2750 10250 2750
 Text GLabel 2500 2400 0    50   Input ~ 0

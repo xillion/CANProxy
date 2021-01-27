@@ -736,7 +736,7 @@ USB+
 NoConn ~ 4950 3350
 Text HLabel 6550 4950 2    50   Input ~ 0
 CAN2_STB
-Text HLabel 6550 4550 2    50   Input ~ 0
+Text HLabel 4750 4850 0    50   Input ~ 0
 CAN1_STB
 Wire Wire Line
 	6550 4150 6350 4150
@@ -2798,24 +2798,24 @@ A5 89 89 49 93 26 4D 82 83 83 F1 31 4C 00 00 00 A1 E1 92 7F 00 00 00 00 AD 80 93
 10 CB 00 00 00 00 B4 C2 FF 01 7E BF A5 82 0B 4F 95 D6 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text HLabel 6800 2050 2    50   Input ~ 0
+Text HLabel 6550 4550 2    50   Input ~ 0
 LIN1_TX
-Text HLabel 6800 2150 2    50   Input ~ 0
+Text HLabel 6550 4650 2    50   Input ~ 0
 LIN1_RX
 Text HLabel 6550 4150 2    50   Input ~ 0
 LIN2_TX
 Text HLabel 6550 4250 2    50   Input ~ 0
 LIN2_RX
-Text HLabel 6800 1950 2    50   Input ~ 0
+Text HLabel 6550 3750 2    50   Input ~ 0
 ~LIN1_SLP
 Text HLabel 6550 4050 2    50   Input ~ 0
 ~LIN2_SLP
 Wire Wire Line
-	6350 2050 6800 2050
+	6350 4550 6550 4550
 Wire Wire Line
-	6350 2150 6800 2150
+	6350 4650 6550 4650
 Wire Wire Line
-	6800 1950 6350 1950
+	6550 3750 6350 3750
 Wire Wire Line
 	9150 5900 9400 5900
 Connection ~ 9400 5900
@@ -2826,7 +2826,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 4450 6550 4450
 Wire Wire Line
-	6550 4550 6350 4550
+	4750 4850 4950 4850
 Text GLabel 2350 4000 2    50   Input ~ 0
 LED1
 Text GLabel 2350 4400 2    50   Input ~ 0
